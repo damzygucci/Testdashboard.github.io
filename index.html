@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuantumEdge</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Include Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+        /* Custom CSS styles */
+
+        /* Add your custom styles for navbar, sidebar, and main content here */
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <!-- Navbar Brand -->
+
+            <a class="navbar-brand" href="#"><i class="fas fa-chart-line"></i> QuantumEdge</a>
+
+            <!-- Navbar Toggler for Small Screens -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Menu Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <!-- User Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-user"></i> User
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="userDropdown">
+                            <a class="dropdown-item" href="#">Edit Profile</a>
+                            <a class="dropdown-item" href="#">Customer Service</a>
+                        </div>
+                    </li>
+                    <!-- Dark Mode Toggle -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-moon"></i> Dark Mode</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="container-fluid">
+
+        <div class="row">
+            <!-- Sidebar Toggler for Small Screens -->
+            <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
+                <!-- Sidebar content goes here -->
+                <div class="position-sticky">
+                    <!-- Sidebar Menu Toggle Button for Small Screens -->
+                    <button class="btn btn-light d-lg-none mb-3" onclick="toggleSidebar()">
+                        <i class="fas fa-bars"></i> Toggle Sidebar
+                    </button>
+
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-user"></i> Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="collapse" data-target="#investmentSubMenu"
+                               aria-expanded="false"><i class="fas fa-coins"></i> Investment</a>
+                            <ul class="nav flex-column pl-4 collapse" id="investmentSubMenu">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Make Investment</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Withdrawal</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Manage All</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-users"></i> My Affiliates</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-dollar-sign"></i> My Earnings</a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-exchange-alt"></i> Funds Transfer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-users"></i> Next of Kin</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-id-card"></i> KYC Update</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-headset"></i> Customer Support</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                        </li>
+                        <!-- Add more sidebar menu items here -->
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Main content -->
+            
+    <!-- Main content -->
+    <main class="container mt-4">
+        <div class="row">
+
